@@ -6,6 +6,7 @@ all you need to do is change the credentials and api things in line 11, 12 and y
 ## running this program on google colab servers
 click on this link
 ![colab script](https://colab.research.google.com/drive/1uemdX1EWgCIErWXUOQzOIbohC_Hf27OU?usp=sharing)
+
 first install spotdl program on server
 ```
 !pip install spotdl

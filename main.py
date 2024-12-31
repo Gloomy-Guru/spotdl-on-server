@@ -9,8 +9,8 @@ load_dotenv()
 
 
 def get_spotify_access_token():
-    client_id = os.getenv("client_id")
-    client_secret = os.getenv("client_secret")
+    client_id = ""
+    client_secret = ""
 
     if not client_id or not client_secret:
         raise ValueError("Client ID and Client Secret must be set as environment variables.")
@@ -80,8 +80,8 @@ def get_playlist_tracks(access_token, playlist_id):
 
 def send_tg():
   tmp = list(os.scandir('.'))
-  bot_token = os.getenv("bot_token")
-  chat_id = os.getenv("chat_id")
+  bot_token = ""
+  chat_id = ""
   for i in tmp:
     if 'mp3' in i.name:
         file ={"document": open(f'{i.name}', 'rb')}
